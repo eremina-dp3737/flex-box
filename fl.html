@@ -57,7 +57,7 @@
             font-size: 10px;
             font-weight: lighter;
         }
-        .box h4 {
+        .box {
             color: rgb(58, 90, 248);
             font-size: 18px;
             font-family: Arial, Helvetica, sans-serif;
@@ -69,6 +69,19 @@
 
 
 
+        }
+        .text{
+            color: rgb(0, 0, 0);
+            font-weight: lighter;
+            padding: 10px;
+        }
+        .code {
+            color:black;
+            font-weight: lighter;
+            padding: 7px;
+            background-color:rgb(238, 235, 235);
+            border-radius: 7px;
+            
         }
        
     </style>
@@ -87,7 +100,8 @@
         <h3>Простая страница для студентов, которые только начинают изучать Flexbox.</h3>
         <div class="box">
             <h4>display: flex</h4>
-            <h5>Превращает э</h5>
+            <h5 class="text">Превращает элемент в flex-контейнер. Его дочерние элементы становятся flex-элементами</h5>
+            <h6 class="code"><code>display: flex;</code></h6>
         </div>
 
     </main>
