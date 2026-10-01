@@ -40,6 +40,12 @@
         main {
             background-color: rgb(238, 235, 235);
             padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            align-items: center;
+            flex-wrap: wrap;   
+            
         }
         h2 {
             display: flex;
@@ -54,7 +60,7 @@
             justify-content: center;
             align-items: center;
             font-family: Arial, Helvetica, sans-serif;
-            font-size: 10px;
+            font-size: 15px;
             font-weight: lighter;
         }
         .box {
@@ -66,24 +72,81 @@
             width: 160px;
             border-radius: 7px;
             box-shadow: 2px 2px 10px 0px rgb(203, 203, 203);
-
-
-
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+            width: 270px;
+            height: 200px;
+            
+            
+        }
+        .blue {
+            padding: 0px 9px;
+            font-weight: bold;
+            font-size: 25px;
+        
         }
         .text{
             color: rgb(0, 0, 0);
             font-weight: lighter;
             padding: 10px;
+            font-size: 15px;
         }
+        
         .code {
             color:black;
             font-weight: lighter;
             padding: 7px;
             background-color:rgb(238, 235, 235);
             border-radius: 7px;
-            
+            width: 215px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin: 7px;
         }
-       
+        .box2 {
+            color: rgb(58, 90, 248);
+            font-size: 18px;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color:rgb(255, 254, 251);
+            padding: 20px 20px;
+            width: 160px;
+            border-radius: 7px;
+            box-shadow: 2px 2px 10px 0px rgb(203, 203, 203);
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+            width: 270px;
+            height: 200px;
+        }
+        .box3 {
+            color: rgb(58, 90, 248);
+            font-size: 18px;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color:rgb(255, 254, 251);
+            padding: 20px 20px;
+            width: 160px;
+            border-radius: 7px;
+            box-shadow: 2px 2px 10px 0px rgb(203, 203, 203);
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+            width: 270px;
+            height: 200px;
+        }
+        .korobki {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
     </style>
 </head>
 <body>
@@ -98,12 +161,26 @@
     <main>
         <h2>Изучаем Flexbox</h2>
         <h3>Простая страница для студентов, которые только начинают изучать Flexbox.</h3>
+        <div class="korobki">
         <div class="box">
-            <h4>display: flex</h4>
-            <h5 class="text">Превращает элемент в flex-контейнер. Его дочерние элементы становятся flex-элементами</h5>
+            <h4 class="blue">display: flex</h4>
+            <h5 class="text">Превращает элемент в flex-
+                контейнер. Его дочерние 
+                элементы становятся flex-
+                элементами</h5>
             <h6 class="code"><code>display: flex;</code></h6>
         </div>
-
+        <div class="box2">
+            <h4 class="blue">justify-content</h4>
+            <h5 class="text">Управляет расположением элементов по главной оси.</h5>
+            <h6 class="code"><code>justify-content: center;</code></h6>
+        </div>
+        <div class="box3">
+            <h4 class="blue">align-items</h4>
+            <h5 class="text">Управляет расположением элементов по поперечной оси.</h5>
+            <h6 class="code"><code>align-items: center;</code></h6>
+        </div>
+        </div>
     </main>
     <footer></footer>
 </body>
